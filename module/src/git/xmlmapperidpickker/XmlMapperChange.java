@@ -46,7 +46,7 @@ public class XmlMapperChange {
 			}
 			if(temp.contains("<updateid=\"")) {
 				temp = temp.replace("<updateid=\"", "");
-				int dex = temp.indexOf("\"");
+				int dex = temp.indexOf("\""); 
 				resultStr.add("update," + temp.substring(0, dex));
 			}
 			if(temp.contains("<deleteid=\"")) {
